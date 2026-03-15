@@ -20,14 +20,14 @@ export default function DevelopersPage() {
       id: 'full-portal',
       title: 'MOCK Results Portal (Full)',
       description: 'Embed the entire examination results portal into your school website.',
-      code: '<iframe src="https://pre-necta-mwanza.vercel.app/" width="100%" height="800px" frameborder="0" style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;"></iframe>',
+      code: '<iframe src="https://mwanza-mock-examination.vercel.app/" width="100%" height="800px" frameborder="0" style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;"></iframe>',
       icon: <Globe className={styles.cardIcon} />
     },
     {
       id: 'reports-only',
       title: 'Statistics & Analytics Only',
       description: 'Show only the reports and performance analysis section.',
-      code: '<iframe src="https://pre-necta-mwanza.vercel.app/reports/" width="100%" height="600px" frameborder="0" style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;"></iframe>',
+      code: '<iframe src="https://mwanza-mock-examination.vercel.app/reports/" width="100%" height="600px" frameborder="0" style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;"></iframe>',
       icon: <Cpu className={styles.cardIcon} />
     }
   ];

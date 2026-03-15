@@ -1,4 +1,4 @@
-# PRE NECTA Mwanza Form Six Results 2026 — Next.js
+# MWANZA FORM SIX MOCK EXAMINATION 2026 — Next.js
 
 A Next.js 14 (App Router) conversion of the original HTML portal, keeping the **exact same UI** with full responsiveness.
 

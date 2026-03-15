@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MOCK EXAMINATION MWANZA - MATOKEO YA KIDATO CHA SITA 2026",
+  title: "MWANZA FORM SIX MOCK EXAMINATION 2026",
   description:
     "Angalia Matokeo ya MOCK EXAMINATION Mwanza 2026 (Form Six). Mfumo rahisi wa kutafuta matokeo kwa jina la shule, takwimu za ufaulu, na uchambuzi wa masomo.",
   keywords:
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "MOCK EXAMINATION MWANZA - MATOKEO YA KIDATO CHA SITA 2026",
+    title: "MWANZA FORM SIX MOCK EXAMINATION 2026",
     description:
       "Pata matokeo yote ya MOCK EXAMINATION Mwanza 2026 kwa urahisi. Uchambuzi wa ufaulu wa shule, masomo, na wanafunzi bora.",
     images: [
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
         alt: "MOCK EXAMINATION MWANZA 2026 SEO Preview",
       },
     ],
-    url: "https://pre-necta-mwanza.vercel.app",
+    url: "https://mwanza-mock-examination.vercel.app",
     siteName: "MOCK EXAMINATION Mwanza",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MOCK EXAMINATION MWANZA - MATOKEO YA KIDATO CHA SITA 2026",
+    title: "MWANZA FORM SIX MOCK EXAMINATION 2026",
     description:
       "Mfumo wa Matokeo ya MOCK EXAMINATION Mwanza 2026. Rahisi, Haraka na Uhakika.",
     images: ["/seo-image.png"],
