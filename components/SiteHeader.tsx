@@ -21,9 +21,9 @@ export default function SiteHeader() {
         {/* Centre text */}
         <div className={styles.siteHeaderCenter}>
           <div className={styles.siteTitle}>
-            MWANZA MOCK EXAMINATION FORM SIX RESULTS 2026
+            MWANZA FORM SIX MOCK EXAMINATION
           </div>
-          <div className={styles.siteSubtitle}>MWANZA REGION</div>
+          <div className={styles.siteSubtitle}>MWANZA REGION 2026</div>
           <div className={styles.headerLinks}>
             <Link href="/" className={styles.navLink}>ALL CENTRES</Link>
             <Link href="/reports" className={styles.navLink}>REPORTS</Link>
