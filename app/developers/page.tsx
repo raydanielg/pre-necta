@@ -133,7 +133,17 @@ export default function DevelopersPage() {
       </main>
 
       <footer className={styles.pageFooter}>
-        <p>Technical support provided by Zerixa Technologies</p>
+        <p>
+          Technical support provided by{" "}
+          <Link 
+            href="https://wa.me/255613976254" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.supportLink}
+          >
+            Zerixa Technologies
+          </Link>
+        </p>
       </footer>
     </div>
   );
