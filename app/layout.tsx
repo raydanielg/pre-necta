@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Pata matokeo yote ya PRE NECTA Mwanza 2026 kwa urahisi. Uchambuzi wa ufaulu wa shule, masomo, na wanafunzi bora.",
     images: [
       {
-        url: "/Screenshot 2026-03-15 171622.png",
+        url: "/seo-image.png",
         width: 1200,
         height: 630,
         alt: "PRE NECTA MWANZA 2026 SEO Preview",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "PRE NECTA MWANZA - MATOKEO YA KIDATO CHA SITA 2026",
     description:
       "Mfumo wa Matokeo ya PRE NECTA Mwanza 2026. Rahisi, Haraka na Uhakika.",
-    images: ["/Screenshot 2026-03-15 171622.png"],
+    images: ["/seo-image.png"],
   },
 };
 
