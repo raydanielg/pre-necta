@@ -11,6 +11,10 @@ export default function SiteFooter() {
           &copy; {currentYear} PRE-NECTA MWANZA. All Rights Reserved.
         </div>
         <div className={styles.designer}>
+          <Link href="/developers" className={styles.devLink}>
+            Developers
+          </Link>
+          <span className={styles.separator}>|</span>
           Designed by{" "}
           <Link 
             href="https://zerixa.co.tz" 

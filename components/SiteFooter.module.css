@@ -24,16 +24,34 @@
 }
 
 .designer {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.devLink {
+  color: #800040;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.devLink:hover {
+  color: #a00050;
+  text-decoration: underline;
+}
+
+.separator {
+  color: #cbd5e1;
 }
 
 .link {
-  color: #ffcc00;
+  color: #2563eb;
   text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid transparent;
+  font-weight: 600;
+  transition: opacity 0.2s;
 }
 
 .link:hover {
