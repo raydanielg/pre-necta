@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -41,9 +43,9 @@ export default function DevelopersPage() {
           <div className={styles.headerContent}>
             <Terminal size={48} className={styles.mainIcon} />
             <h1 className={styles.title}>Developer Documentation</h1>
-            <p className={styles.subtitle}>
-              Integrate PRE-NECTA MWANZA 2026 results into your own school portal or educational website.
-            </p>
+            <div className={styles.subtitle}>
+              Integrate MOCK EXAMINATION MWANZA 2026 results into your own school portal or educational website.
+            </div>
           </div>
         </div>
       </header>

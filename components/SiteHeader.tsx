@@ -21,7 +21,7 @@ export default function SiteHeader() {
         {/* Centre text */}
         <div className={styles.siteHeaderCenter}>
           <div className={styles.siteTitle}>
-            PRE NECTA MWANZA FORM SIX EXAMINATION RESULTS 2026
+            MOCK EXAMINATION MWANZA FORM SIX EXAMINATION RESULTS 2026
           </div>
           <div className={styles.siteSubtitle}>MWANZA REGION</div>
           <div className={styles.headerLinks}>
@@ -47,7 +47,7 @@ export default function SiteHeader() {
       <div className={styles.announcement}>
         <div className="marquee-wrapper">
           <span className="marquee-inner">
-            Matokeo ya PRE NECTA MWANZA, Kidato cha Sita 2026 yametangazwa –
+            Matokeo ya MOCK EXAMINATION MWANZA, Kidato cha Sita 2026 yametangazwa –
             Tafadhali tumia kifaa cha utafutaji chini kubaini shule
             unayotaka.
           </span>

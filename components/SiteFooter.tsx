@@ -8,7 +8,7 @@ export default function SiteFooter() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.copyright}>
-          &copy; {currentYear} PRE-NECTA MWANZA. All Rights Reserved.
+          &copy; {currentYear} MOCK EXAMINATION MWANZA. All Rights Reserved.
         </div>
         <div className={styles.designer}>
           <Link href="/developers" className={styles.devLink}>
