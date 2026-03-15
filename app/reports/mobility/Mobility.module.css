@@ -1,0 +1,222 @@
+.pageWrapper {
+  min-height: 100vh;
+  background: #f4f7f9;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 36px;
+  color: #004080;
+  margin-bottom: 15px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.searchWrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px 20px 14px 50px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #004080;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.1);
+}
+
+.tableWrapper {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease-out backwards;
+  animation-delay: 0.2s;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  background: #004080;
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  white-space: nowrap;
+}
+
+.headerCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerCellCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: #444;
+  background: #fff;
+}
+
+.row:last-child td {
+  border-bottom: none;
+}
+
+.row:hover td {
+  background: #f8faff;
+}
+
+.centerNumber {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: #004080;
+}
+
+.schoolName {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.positive {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.negative {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.up {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.down {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.noResults {
+  padding: 60px;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  /* Keep GPA ZONAL and others, only hide Council on medium screens if needed */
+  .table th:nth-child(2), .table td:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+  
+  .container {
+    padding: 40px 15px;
+  }
+
+  .tableWrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+  }
+
+  .table th, .table td {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  /* Ensure important columns are always visible or scrollable */
+  .table {
+    min-width: 800px; /* Force minimum width to enable horizontal scroll */
+  }
+}

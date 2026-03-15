@@ -1,0 +1,166 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/logo/illustration-pattern-gray-lines-white-background_595882-790.jpg") center center no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.topActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #004080;
+  color: #ffffff;
+  border-bottom: none;
+  z-index: 10;
+}
+
+.backLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+}
+
+.backLink:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.pageInfo {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+
+.actionBtn {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  white-space: nowrap;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.actionBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.actionBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.viewerWrap {
+  flex: 1;
+  padding: 0;
+  min-height: 0;
+  overflow: auto;
+  background: transparent;
+}
+
+.pdfStage {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background: transparent;
+  gap: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+.pdfPage {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  display: block !important;
+}
+
+/* Force removal of any margin/padding from react-pdf containers */
+.pdfStage :global(.react-pdf__Document) {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+.pdfStage :global(.react-pdf__Page) {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  position: relative !important;
+  border: none !important;
+}
+
+.pdfStage :global(.react-pdf__Page__canvas) {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+.pdfStage :global(.react-pdf__Page) canvas {
+  margin: 0 !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+.pdfStage canvas {
+  margin: 0 !important;
+  display: block !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+}
+
+.loading {
+  padding: 16px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.emptyState {
+  padding: 20px 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 480px) {
+  .topActions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .actionBtn {
+    padding: 5px 8px;
+  }
+}

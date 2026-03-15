@@ -1,0 +1,199 @@
+.pageWrapper {
+  min-height: 100vh;
+  background: #f4f7f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  font-size: 32px;
+  color: #004080;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Column General */
+.columnGeneral {
+  position: sticky;
+  top: 20px;
+}
+
+.columnTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.columnTitle h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.titleIcon {
+  color: #004080;
+}
+
+.generalCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.cardInfo {
+  margin-bottom: 25px;
+}
+
+.bigIcon {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.cardInfo h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cardInfo p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.mainViewBtn {
+  display: block;
+  background: #004080;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.mainViewBtn:hover {
+  background: #003366;
+  transform: translateY(-2px);
+}
+
+/* Column Subjects */
+.columnSubjects {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.subjectList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subjectRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+  background: #f8faff;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.subjectRow:hover {
+  background: #fff;
+  border-color: #004080;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.05);
+}
+
+.subjectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.typeIconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #004080;
+}
+
+.subjectCode {
+  font-size: 12px;
+  font-weight: 800;
+  color: #004080;
+  letter-spacing: 0.5px;
+}
+
+.subjectName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.rowIcon {
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.subjectRow:hover .rowIcon {
+  color: #004080;
+}
+
+@media (max-width: 992px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .columnGeneral {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+  
+  .container {
+    padding: 20px 15px;
+  }
+}
