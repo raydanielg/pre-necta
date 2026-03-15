@@ -32,14 +32,14 @@
 }
 
 .devLink {
-  color: #800040;
+  color: #64748b;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .devLink:hover {
-  color: #a00050;
+  color: #1e293b;
   text-decoration: underline;
 }
 
@@ -47,15 +47,8 @@
   color: #cbd5e1;
 }
 
-.link {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-  transition: opacity 0.2s;
-}
-
 .noniText {
-  color: #800040;
+  color: #64748b;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
