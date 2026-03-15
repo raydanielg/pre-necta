@@ -46,7 +46,7 @@ export const reports: Report[] = [
     id: "district-ranks",
     title: "District Ranks",
     description: "Ranking of all districts in Mwanza region based on their overall performance.",
-    file: "reports/district-ranks/DISTRICT RANK MASOMO F6.pdf",
+    file: "reports/district-ranks/DISTRICT RANK OVERALL F6.pdf",
     category: "performance",
   },
 ];
