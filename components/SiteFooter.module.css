@@ -54,9 +54,10 @@
   transition: opacity 0.2s;
 }
 
-.link:hover {
-  color: #ffffff;
-  border-bottom-color: #ffffff;
+.noniText {
+  color: #800040;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {

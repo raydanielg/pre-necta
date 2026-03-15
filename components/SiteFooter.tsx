@@ -12,18 +12,11 @@ export default function SiteFooter() {
         </div>
         <div className={styles.designer}>
           <Link href="/developers" className={styles.devLink}>
-            Developers
+            &gt; Developers
           </Link>
           <span className={styles.separator}>|</span>
           Designed by{" "}
-          <Link 
-            href="https://zerixa.co.tz" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.link}
-          >
-            Zerixa Technologies
-          </Link>
+          <span className={styles.noniText}>Noni</span>
         </div>
       </div>
     </footer>
