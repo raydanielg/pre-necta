@@ -18,11 +18,16 @@ export default function SchoolsGrid() {
         s.name.toLowerCase().includes(text) ||
         s.code.toLowerCase().includes(text);
 
-      const matchesLetter =
-        activeLetter === "ALL" ||
-        s.name.charAt(0).toUpperCase() === activeLetter;
+      let matchesFilter = false;
+      if (activeLetter === "ALL") {
+        matchesFilter = !s.isPC;
+      } else if (activeLetter === "PC") {
+        matchesFilter = !!s.isPC;
+      } else {
+        matchesFilter = s.name.charAt(0).toUpperCase() === activeLetter;
+      }
 
-      return matchesText && matchesLetter;
+      return matchesText && matchesFilter;
     });
   }, [searchText, activeLetter]);
 
@@ -62,6 +67,12 @@ export default function SchoolsGrid() {
             onClick={() => setActiveLetter("ALL")}
           >
             ALL CENTRES
+          </button>
+          <button
+            className={`${styles.alphaLink} ${activeLetter === "PC" ? styles.active : ""}`}
+            onClick={() => setActiveLetter("PC")}
+          >
+            PRIVATE CANDIDATES (PC)
           </button>
           <span className={styles.alphaLabel}>
             CLICK ANY LETTER BELOW TO FILTER SCHOOLS BY ALPHABET

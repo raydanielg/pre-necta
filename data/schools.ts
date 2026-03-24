@@ -2,6 +2,7 @@ export interface School {
   code: string;
   name: string;
   file: string;
+  isPC?: boolean;
 }
 
 export const schools: School[] = [
@@ -45,4 +46,11 @@ export const schools: School[] = [
   { code: "S5663", name: "ELPAS SECONDARY SCHOOL", file: "results/S5663-ELPAS SECONDARY.pdf" },
   { code: "S6426", name: "UKEREWE SECONDARY SCHOOL", file: "results/S6426-UKEREWE SECONDARY.pdf" },
   { code: "S7032", name: "MWANZA GIRLS SECONDARY SCHOOL", file: "results/S7032-MWANZA GIRLS SECONDARY.pdf" },
+  { code: "M148", name: "RIGHT VISION CENTRE", file: "results/pc/M148-RIGHT VISION CENTRE.pdf", isPC: true },
+  { code: "P0016", name: "MWANZA ASEP", file: "results/pc/P0016-MWANZA ASEP.pdf", isPC: true },
+  { code: "P0016", name: "MWANZA PLANET ASEP", file: "results/pc/P0016-MWANZA PLANET ASEP.pdf", isPC: true },
+  { code: "P0016", name: "SENGEREMA TRC ASEP CENTER", file: "results/pc/P0016-SENGEREMA TRC ASEP CENTER.pdf", isPC: true },
+  { code: "P0016", name: "WISDOM ASEP", file: "results/pc/P0016-WISDOM ASEP.pdf", isPC: true },
+  { code: "P0908", name: "NYAKATO LUTHERAN ASEP", file: "results/pc/P0908-NYAKATO LUTHERAN ASEP.pdf", isPC: true },
+  { code: "PO904", name: "NYAKAHOJA ASEP", file: "results/pc/PO904-NYAKAHOJA ASEP.pdf", isPC: true },
 ];
